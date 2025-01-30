@@ -1,0 +1,12 @@
+<form class="row" (ngSubmit)="emitCharacter()">
+    <h4>Agregar Personaje</h4>
+                <!-- Para que el NngModel Funcionara correctamente tenemos que poner Name="" -->
+    <input type="text" [(ngModel)]="character.name" name="name" class="form-control mb-2" placeholder="Nombre">
+    
+    <input type="number" [(ngModel)]="character.power" name="power" class="form-control mb2" placeholder="Poder">
+
+    <button type="submit" class="btn btn-primary"> Agregar</button>
+       
+    <!-- esto se conoce como un pipe,ayuda a ver la informacion dentro del objeto -->
+    <!-- <pre>{{character | json}}</pre> -->
+</form>
